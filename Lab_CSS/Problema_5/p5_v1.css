@@ -1,0 +1,24 @@
+.poza {
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    border: aqua solid 45px;
+    width: 180px;
+    height: 240px;
+    display: block;
+    margin: auto;
+}
+
+.version_2 {
+    display: flex;
+}
+
+.parentDiv {
+    border: black solid 3px;
+    display: inline-block;
+}

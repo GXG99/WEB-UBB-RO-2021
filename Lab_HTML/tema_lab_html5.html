@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+    <head>
+        <title>Formular inscriere</title>
+        <meta charset="UTF-8">
+    </head>
+<form action="/action.php">
+        <table style="table-layout:fixed;">
+            <thead>
+                <tr>
+                    <th colspan="3">Date personale</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="nume">Nume:</label><br>
+                        <input type="text" id="nume" name="nume">
+                    </td>
+                    <td>
+                        <label for="prenume">Prenume:</label><br>
+                        <input type="text" id="prenume" name="prenume">
+                    </td>
+                    <td>
+                        <label for="CNP">CNP:</label><br>
+                        <input type="text" id="CNP" name="CNP" pattern="[0-9]{13}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="BI/CI">BI/CI:</label><br>
+                        <input type="text" id="BI/CI" name="BI/CI" placeholder="Serie">
+                    </td>
+                    <td>
+                        <label for="Numar">Număr:</label><br>
+                        <input type="text" id="Numar" name="Numar" placeholder="Numar">
+                    </td>
+                    <td>
+                        <label>Sex: </label> <br>
+                        <input type="radio" id="sexm" name="sex" value="masculin"> 
+                        <label>Masculin</label>
+                        <input type="radio" id="sexf" name="sex" value="feminin"> 
+                        <label>Feminin</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="judete">Județ: </label><br>
+                        <select id="judete" name="judete" style="width:100%">
+                            <option value="0">Alege Judet</option>
+                            <option value="Alba">Alba</option>
+                            <option value="Arad">Arad</option>
+                            <option value="Arges">Arges</option>
+                            <option value="Bacau">Bacau</option>
+                            <option value="Bihor">Bihor</option>
+                            <option value="Bistrita Nasaud">Bistrita Nasaud</option>
+                            <option value="Botosani">Botosani</option>
+                            <option value="Brasov">Brasov</option>
+                            <option value="Braila">Braila</option>
+                            <option value="Bucuresti">Bucuresti</option>
+                            <option value="Buzau">Buzau</option>
+                            <option value="Caras Severin">Caras Severin</option>
+                            <option value="Calarasi">Calarasi</option>
+                            <option value="Cluj">Cluj</option>
+                            <option value="Constanta">Constanta</option>
+                            <option value="Covasna">Covasna</option>
+                            <option value="Dambovita">Dambovita</option>
+                            <option value="Dolj">Dolj</option>
+                            <option value="Galati">Galati</option>
+                            <option value="Giurgiu">Giurgiu</option>
+                            <option value="Gorj">Gorj</option>
+                            <option value="Harghita">Harghita</option>
+                            <option value="Hunedoara">Hunedoara</option>
+                            <option value="Ialomita">Ialomita</option>
+                            <option value="Iasi">Iasi</option>
+                            <option value="Ilfov">Ilfov</option>
+                            <option value="Maramures">Maramures</option>
+                            <option value="Mehedinti">Mehedinti</option>
+                            <option value="Mures">Mures</option>
+                            <option value="Neamt">Neamt</option>
+                            <option value="Olt">Olt</option>
+                            <option value="Prahova">Prahova</option>
+                            <option value="Satu Mare">Satu Mare</option>
+                            <option value="Salaj">Salaj</option>
+                            <option value="Sibiu">Sibiu</option>
+                            <option value="Suceava">Suceava</option>
+                            <option value="Teleorman">Teleorman</option>
+                            <option value="Timis">Timis</option>
+                            <option value="Tulcea">Tulcea</option>
+                            <option value="Vaslui">Vaslui</option>
+                            <option value="Valcea">Valcea</option>
+                            <option value="Vrancea">Vrancea</option>
+                        </select>
+                    </td>
+                    <td colspan="2">
+                        <label for="oras">Oraș: </label> <br>
+                        <input type="text" id="oras" name="oras" style="width:97%">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        <label>Adresa: </label><br>
+                        <input type="text" id="adresa" name="adresa" style="width:98%;" placeholder="Strada, Număr, Bloc, Scara, Apartament">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="nrtelefon">Nr. telefon: </label><br>
+                        <input type="text" id="nrtelefon" name="nr">
+                    </td>
+                    <td>
+                        <label for="telfix">Telefon fix: </label><br>
+                        <input type="text" id="telfix" name="telfix">
+                    </td>
+                    <td>
+                        <label for="email">Email: </label><br>
+                        <input type="text" id="email" name="email">
+                    </td>
+                </tr>
+
+                <tr> 
+                    <td colspan="3">
+                        <table style="table-layout:fixed;">
+                            <tr>        
+                                <th colspan="2">Date triaj</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                        Vă rugăm bifați raspunsurile<br>
+                                        la intrebarile <br>
+                                        din partea dreapta
+                                </td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <th colspan="3">
+                                                    Intrebari
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                
+                                            </td>
+                                            <td>
+                                                <label>DA/NU</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                1.
+                                            </td>
+                                            <td>
+                                                Aveți vreo problema de <br>
+                                                sănătate in momentul de fața?
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" id="raspuns1" name="raspuns" value="da/nu">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                2.
+                                            </td>
+                                            <td>
+                                                Vă stiti cu alergii la alimente sau medicamente? 
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" id="raspuns2" name="raspuns" value="da/nu">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                3.
+                                            </td>
+                                            <td>
+                                                Ați avut vreun episod febril, asemanator cu gripa,<br>
+                                                in ultimele 14 zile? 
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" id="raspuns3" name="raspuns" value="da/nu">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Informatii vaccinuri</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Pfizer/BioNTech</h3>
+                                    <ol type="I">
+                                        <li>
+                                            Aprobat
+                                        </li>
+                                        <li>
+                                            Tip: mRNA
+                                            <ol>
+                                                <li>
+                                                    Contine o parte din "instructiunile" virusului
+                                                </li>
+                                                <li>
+                                                    Eficienta 100% :)
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            2 doze
+                                        </li>
+                                        <li>
+                                            600 milioane de doze cumparate in UE
+                                        </li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <h3>AstraZeneca</h3>
+                                    <ul>
+                                        <li>
+                                            Aprobat
+                                        </li>
+                                        <li>
+                                            Tip: vector viral
+                                            <ul>
+                                                <li>
+                                                    Virus fals, inofensiv
+                                                </li>
+                                                <li>
+                                                    Permite celulelor organismului<br>
+                                                    sa sintetizeze proteina unica virusului
+                                                </li>
+                                                <li>
+                                                    Eficienta 100% :)
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            2 doze
+                                        </li>
+                                        <li>
+                                            400 milioane de doze cumparate in UE
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Moderna</h3>
+                                    <ol type="A">
+                                        <li>
+                                            Aprobat
+                                        </li>
+                                        <li>
+                                            Tip: mRNA
+                                            <ol>
+                                                <li>
+                                                    Contine o parte din "instructiunile" virusului
+                                                </li>
+                                                <li>
+                                                    Eficienta 100% :) 
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            2 doze
+                                        </li>
+                                        <li>
+                                            460 milioane de doze cumparate in UE
+                                        </li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <h3>Johnson & Johnson/Janssen Pharmaceuticals</h3>
+                                    <ul style="list-style-type:lower-greek;">
+                                        <li>
+                                            In curs de aprobare
+                                        </li>
+                                        <li>
+                                            Tip: vector viral
+                                            <ul style="list-style-type:disc;">
+                                                <li>
+                                                    Virus fals, inofensiv
+                                                </li>
+                                                <li>
+                                                    Permite celulelor organismului<br>
+                                                    sa sintetizeze proteina unica virusului
+                                                </li>
+                                                <li>
+                                                    Eficienta 100% :) 
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            2 doze
+                                        </li>
+                                        <li>
+                                            400 milioane de doze cumparate in UE
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="3">
+                        Observatii<br>
+                        <textarea name="observatii" id="observatii" rows="5" cols="100"></textarea>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="3">
+                        <input type="submit" value="Trimite">
+                        <br><br><br>
+                        <a href="https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/safe-covid-19-vaccines-europeans_en">
+                            Sursa</a>
+                    </th>
+                </tr>
+            </tbody>
+        
+        </table>
+    
+</form>
+</html>

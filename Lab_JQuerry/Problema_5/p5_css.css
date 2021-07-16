@@ -1,0 +1,48 @@
+#slider {
+    width: 900px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+li {
+    position: relative;
+}
+
+a {
+    color: white;
+    font-size: 30px;
+    z-index: 1;
+    position: absolute;
+    bottom: 25px;
+    left: 46.5%;
+}
+
+.slides {
+    width: 6000px;
+    height: 400px;
+    margin-left: 0;
+    padding: 0;
+}
+
+.slide {
+    float: left;
+    list-style-type: none;
+    width: 900px;
+    height: 400px;
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    align-content: center;
+}
+
+img {
+    width: 900px;
+    height: 400px;
+}

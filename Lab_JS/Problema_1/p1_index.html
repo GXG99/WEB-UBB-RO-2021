@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 1</title>
+    <style>
+        #good_games_label {
+            vertical-align: top;
+        }
+
+        #bad_games_label {
+            vertical-align: top;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    <label for="good_games" id="good_games_label">Good games: </label><select name="good_games" id="good_games"
+                                                                              multiple="multiple"
+                                                                              ondblclick="myFunction();">
+    <optgroup label="Good games" id="gg">
+        <option value="aoe2">
+            Age of Empires II
+        </option>
+        <option value="civ6">
+            Civilization 6
+        </option>
+        <option value="cs16">
+            Counter-Strike 1.6
+        </option>
+        <option value="homm3">
+            Heroes of Might and Magic III
+        </option>
+        <option value="Ori">
+            Ori and the Blind Forest
+        </option>
+    </optgroup>
+</select>
+</div>
+<br><br><br>
+<div>
+    <label for="bad_games" id="bad_games_label">Bad games </label><select name="bad_games" multiple="multiple"
+                                                                          id="bad_games" ondblclick="myFunction();">
+    <optgroup label="Bad Games" id="bg">
+        <option value="lol">
+            League of Legends
+        </option>
+        <option value="Valorant">
+            Valorant
+        </option>
+        <option value="csgo">
+            Counter-Strike:Global-Offensive
+        </option>
+    </optgroup>
+</select>
+</div>
+<script src="p1_script.js"></script>
+</body>
+</html>

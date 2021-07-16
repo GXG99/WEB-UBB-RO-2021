@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<meta charset="UTF8">
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Problema 1</title>
+</head>
+<body>
+<div>
+    <select name="departure" id="departure" onchange="getDestinationsJQuery(this.value)">
+        <option selected></option>
+        <option>Curtea de Arges</option>
+        <option>Pitesti</option>
+        <option>Brasov</option>
+    </select>
+    <select name="arrival" id="arrival">
+    </select>
+</div>
+
+</body>
+<script>
+    // function getDestinationsJS(str) {
+    //     if (str == "")
+    //     {
+    //         document.getElementById("arrival").innerHTML = "";
+    //         return;
+    //     }
+    //     var xmlhttp = new XMLHttpRequest();
+    //     xmlhttp.onreadystatechange = function() {
+    //         if (this.readyState == 4 && this.status == 200) {
+    //             document.getElementById("arrival").innerHTML = "";
+    //             var chars = this.responseText.split(",");
+    //             console.log(chars);
+    //             chars.forEach(element => {
+    //                 var option = document.createElement("option");
+    //                 option.text = element;
+    //                 document.getElementById("arrival").add(option);
+    //             });
+    //         }
+    //     };
+    //     xmlhttp.open("GET", "data.php?departure=" + str, true);
+    //     xmlhttp.send();
+    // }
+
+
+    function getDestinationsJQuery(str) {
+        $.get("data.php?departure=" + str, function(data, status) {
+            $("#arrival").empty();
+            data.split(",").forEach(element => {
+                var option = new Option(element, element);
+                $('#arrival').append($(option));
+            });
+        });
+    }
+</script>
+</html>

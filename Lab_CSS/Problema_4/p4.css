@@ -1,0 +1,113 @@
+#socialMediaList  li{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+#socialMediaList li, #socialMediaList a {
+    height: 84px;
+    display: block;
+}
+
+#fb {
+    width: 84px;
+    background: url("css-pr4.png") 0 84px;
+}
+
+#fb a:hover {
+    background: url("css-pr4.png") 0px 0px;
+}
+
+#puncte {
+    width: 84px;
+    background: url("css-pr4.png") -84px 84px;
+}
+
+#puncte a:hover {
+    background: url("css-pr4.png") -84px 0px;
+}
+
+#minge {
+    width: 84px;
+    background: url("css-pr4.png") -168px 84px;
+}
+
+#minge a:hover {
+    background: url("css-pr4.png") -168px 0px;
+}
+
+#google {
+    width: 84px;
+    background: url("css-pr4.png") -252px 84px;
+}
+
+#google a:hover {
+    background: url("css-pr4.png") -252px 0px;
+}
+
+#linkedin {
+    width: 84px;
+    background: url("css-pr4.png") -336px 84px;
+}
+
+#linkedin a:hover {
+    background: url("css-pr4.png") -336px 0px;
+}
+
+#pinterest {
+    width: 84px;
+    background: url("css-pr4.png") -420px 84px;
+}
+
+#pinterest a:hover {
+    background: url("css-pr4.png") -420px 0px;
+}
+
+#wifi {
+    width: 84px;
+    background: url("css-pr4.png") -504px 84px;
+}
+
+#wifi a:hover {
+    background: url("css-pr4.png") -504px 0px;
+}
+
+#skype {
+    width: 84px;
+    background: url("css-pr4.png") -588px 84px;
+}
+
+#skype a:hover {
+    background: url("css-pr4.png") -588px 0px;
+}
+
+#twitter {
+    width: 84px;
+    background: url("css-pr4.png") -672px 84px;
+}
+
+#twitter a:hover {
+    background: url("css-pr4.png") -672px 0px;
+}
+
+#vimeo {
+    width: 84px;
+    background: url("css-pr4.png") -756px 84px;
+}
+
+#vimeo a:hover {
+    background: url("css-pr4.png") -756px 0px;
+}
+
+#youtube {
+    width: 84px;
+    background: url("css-pr4.png") -840px 84px;
+}
+
+#youtube a:hover {
+    background: url("css-pr4.png") -840px 0px;
+}
+
+li {
+    float: left;
+}

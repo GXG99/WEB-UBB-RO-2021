@@ -1,0 +1,51 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+.horizontalMenu {
+    height: 25px;
+    background-color: yellow;
+    text-align: center;
+}
+
+
+header {
+    background-color: red;
+    height: 100px;
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin:0;
+}
+
+p {
+    margin:0;
+}
+
+.content {
+    background-color: green;
+    text-align: center;
+    min-height: 83.5%;
+    margin: 0 auto -60px;
+}
+
+.footer,
+.push {
+    height: 60px;
+}
+
+footer {
+    background: pink;
+    line-height: 60px;
+    padding: 0;
+    text-align: center;
+}

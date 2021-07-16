@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background: gray;
+}
+
+
+.joc {
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 2000px;
+}
+
+.carte {
+    width: calc(25% - 10px);
+    height: calc(33.33% - 10px);
+    margin: 5px;
+    position: relative;
+    display: flex;
+    transform-style: preserve-3d;
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.carte:active {
+    transform: scale(0.95);
+    transition: transform .2s;
+}
+
+.carte img {
+    padding: 0;
+}
+
+/*.carte span {*/
+/*    font-size: 50px;*/
+/*    position: absolute;*/
+/*    padding: 0;*/
+/*    color: white;*/
+/*    top: 50%;*/
+/*    z-index: 0;*/
+/*}*/
+
+.fata, .spate {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 20px;
+    backface-visibility: hidden;
+}
+
+.fata {
+    transform: rotateX(180deg);
+}
+
+.carte.flip {
+    transform: rotateX(180deg);
+}

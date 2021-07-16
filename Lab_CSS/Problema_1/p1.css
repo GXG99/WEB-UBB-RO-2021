@@ -1,0 +1,26 @@
+#leftDiv {
+    display: inline-block;
+    width: 200px;
+    margin: auto 5px;
+}
+
+#rightDiv {
+    display: inline-block;
+    width: 200px;
+    margin: auto 5px;
+}
+
+#image {
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+
+#text {
+    text-align: center;
+}
+
+#mainDiv {
+    display: inline-flex;
+    border: 3px solid #4CAF50;
+}

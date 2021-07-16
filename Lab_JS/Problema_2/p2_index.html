@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 2</title>
+</head>
+<body>
+
+<form name="formular" action="" onsubmit="return validateData()" method="post">
+    <label for="firstName">First name: </label> <br>
+    <input type="text" id="firstName" name="firstName"><br>
+    <label for="lastName">Last Name: </label><br>
+    <input type="text" id="lastName" name="lastName"><br>
+    <label for="birthDate">Birth Date</label> <br>
+    <input type="date" id="birthDate" name="birthDate"><br>
+    <label for="age">Age: </label><br>
+    <input type="number" id="age" name="age"><br>
+    <label for="email">Email: </label><br>
+    <input type="text" id="email" name="email">
+    <input type="submit" value="Submit">
+</form>
+<script>
+    function computeDate(birthDate) {
+        let diff = Date.now() - birthDate;
+        let age = new Date(diff);
+        return Math.abs(age.getUTCFullYear() - 1970);
+    }
+
+    function validateData() {
+        let fName = document.forms["formular"]["firstName"].value;
+        let lName = document.forms["formular"]["lastName"].value;
+        let date = document.forms["formular"]["birthDate"].value;
+        let age = document.forms["formular"]["age"].value;
+        let email = document.forms["formular"]["email"].value;
+        let birthDate = new Date(date);
+        let validation = true;
+        let errors = "Inputs ";
+        if (fName === "") {
+            document.getElementById("firstName").style.borderColor = "red";
+            errors += "First Name, ";
+            validation = false;
+        }
+        if (lName === "") {
+            document.getElementById("lastName").style.borderColor = "red";
+            errors += "Last Name, "
+            validation = false;
+        }
+        if (computeDate(birthDate) !== parseInt(age)) {
+            document.getElementById("age").style.borderColor = "red";
+            document.getElementById("birthDate").style.borderColor = "red";
+            errors += "Birth Date, "
+            validation = false;
+        }
+        if (email === "") {
+            document.getElementById("email").style.borderColor = "red";
+            errors += "Email, "
+            validation = false;
+
+        }
+        if (validation === true) {
+            alert("Datele sunt corecte")
+        } else {
+            alert(errors + "are not correct");
+        }
+        return validation;
+    }
+</script>
+</body>
+</html>

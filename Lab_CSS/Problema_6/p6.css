@@ -1,0 +1,64 @@
+.nume {
+    position: relative;
+    font-size: 2rem;
+    font-family: monospace;
+    width: 301px;
+}
+
+.prenume {
+    position: relative;
+    font-size: 2rem;
+    font-family: monospace;
+    width: 301px;
+}
+
+.cnp {
+    position: relative;
+    font-size: 2rem;
+    font-family: monospace;
+    width: 301px;
+}
+
+.lines {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+
+    /* create lines */
+    background-image: linear-gradient(
+            to right,
+            black 1px,
+            transparent 1px);
+    background-size: 2ch;
+}
+
+input {
+    display: block;
+    box-sizing: border-box;
+    border-width: 1px 1px 1px;
+    border-color: black;
+    border-style: solid;
+    font: inherit;
+
+    padding: .25ch .5ch;
+    letter-spacing: 1ch;
+    max-width: 20.1ch;
+}
+
+
+#cnpText {
+    display: block;
+    box-sizing: border-box;
+    border-width: 1px 1px 1px;
+    border-color: black;
+    border-style: solid;
+    font: inherit;
+
+    padding: .25ch .5ch;
+    letter-spacing: 1ch;
+    max-width: 20.1ch;
+}

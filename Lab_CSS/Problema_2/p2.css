@@ -1,0 +1,57 @@
+body {
+    margin: 0px;
+}
+
+header {
+    text-align: left;
+    background-color: tomato;
+    height: 5rem;
+}
+#menuDiv {
+    background-color: aqua;
+
+}
+
+
+ul {
+    list-style-type: none;
+    margin:0px;
+    padding-left: 10px;
+}
+
+li {
+    list-style-position:inside;
+    border-left: 1px solid black;
+    display: inline-block;
+    margin-right: 5rem;
+    text-align: left;
+}
+
+html, body {
+    height: 93.3%;
+    margin: 0;
+}
+.content {
+    background-color: deepskyblue;
+    min-height: 100%;
+    margin: 0 auto -50px;
+}
+.footer,
+.push {
+    height: 50px;
+}
+
+p {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+footer {
+    background: violet;
+    color: white;
+    line-height: 50px;
+    padding: 0 20px;
+}
